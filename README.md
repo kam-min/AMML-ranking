@@ -1,3 +1,18 @@
+### Установка зависимостей
+
+Перед запуском ноутбука необходимо установить библиотеки из `requirements.txt`:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Если в Google Colab возникает ошибка `RuntimeError: operator torchvision::nms does not exist`, необходимо удалить конфликтующую версию `torchvision`:
+
+```bash
+python -m pip uninstall -y torchvision
+```
+
+После установки или обновления библиотек следует один раз перезапустить среду выполнения Python, а затем запустить все ячейки `solution.ipynb` по порядку.
 ## Препроцессинг и признаки
 
 Данные там грязные, так что первым делом я их приводила в порядок:
